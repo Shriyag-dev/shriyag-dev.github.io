@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shriya Garlapati | Full Stack Software Engineer</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Subtle grid overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Shriya Garlapati</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-geometric" aria-hidden="true"></div>
+    <div class="hero-glow-1" aria-hidden="true"></div>
+    <div class="hero-glow-2" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-photo">
+        <img src="PICTURE.png" alt="Shriya Garlapati" />
+      </div>
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          <span>Available for Full-Time Opportunities</span>
+        </div>
+        <h1 class="hero-name">
+          <span class="hero-word">Full Stack</span>
+          <span class="hero-word">Software Engineer</span>
+        </h1>
+        <p class="hero-tagline">I'm <strong>Shriya Garlapati</strong> &mdash; Software Engineer with experience building scalable microservices, event-driven systems, and ML pipelines using Java, Spring Boot, React, and AWS, delivering high-performance solutions across enterprise and research domains.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+          <a href="#contact" class="btn-ghost">Get In Touch</a>
+          <a href="Resume_ShriyaGarlapati.pdf" target="_blank" class="btn-ghost"><i class="fas fa-file-alt"></i> Resume</a>
+        </div>
+        <div class="hero-social">
+          <a href="https://www.linkedin.com/in/shriya-dev/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Shriyag-dev" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:shriyag2536@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section section-light">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="section-number">01</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Building production systems and ML pipelines at scale</p>
+      </div>
+      <div class="about-text">
+        <p class="drop-cap">I'm a <strong>Full Stack Software Engineer</strong> with a <strong>M.S. in Computer Science from the University of Georgia (GPA: 3.85)</strong>, specializing in building scalable microservices, event-driven systems, and ML pipelines using Java, Spring Boot, React, and AWS.</p>
+        <p>My experience spans from engineering fault-tolerant Kafka pipelines and JWT-based microservices auth at the <strong>University of Georgia</strong>, to modernizing POS systems with Redis caching and Elasticsearch at <strong>NCR Voyix</strong>, and automating cloud compliance across 8 AWS services at <strong>S&amp;P Global</strong>. I thrive on optimizing system performance &mdash; whether that's reducing API latency by 93%, achieving R&sup2; of 0.91 on ML forecasting models, or cutting security drift by 90%.</p>
+        <p>Currently working as a <strong>Research Assistant</strong> at the University of Georgia, engineering distributed microservices with Kafka event streaming, JWT authentication, and React-based frontends.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section section-light">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-subtitle">Professional journey across enterprise systems and research</p>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Research Assistant &ndash; Software Engineering</h3>
+                <p class="company">University of Georgia</p>
+              </div>
+              <span class="timeline-date">Aug 2025 &ndash; May 2026</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Engineered a fault-tolerant <strong>Kafka consumer</strong> persisting ML prediction results to PostgreSQL with post-persistence manual offset commits, idempotent deduplication, and dead-letter topic routing, minimizing data loss under transient failures.</li>
+              <li>Designed a stateless <strong>JWT-based authentication and RBAC authorization</strong> for a distributed microservices platform, centralizing token issuance and validation while standardizing authorization across services.</li>
+              <li>Decoupled email delivery from the signup critical path using <strong>asynchronous Kafka pipeline</strong>, reducing p95 signup latency by <strong>~350ms</strong>.</li>
+              <li>Built a centralized <strong>JWT auth layer with React Context API and Axios interceptors</strong>, consolidating token attachment, refresh, and session handling.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Kafka</span><span>PostgreSQL</span><span>JWT</span><span>React</span><span>Spring Boot</span><span>Microservices</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Graduate Researcher</h3>
+                <p class="company">University of Georgia</p>
+              </div>
+              <span class="timeline-date">Aug 2024 &ndash; May 2025</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Developed an end-to-end <strong>ML pipeline</strong> forecasting alfalfa biomass yields across 4 NY locations using 20 years of agricultural trial data (7,344 records), achieving a best R&sup2; of <strong>0.91</strong> and SMAPE of <strong>2.99%</strong> via Optuna-tuned XGBoost.</li>
+              <li>Improved model performance through <strong>Optuna Bayesian hyperparameter search and ensemble methods</strong> (voting and stacking regressors), boosting R&sup2; by up to <strong>10.5%</strong> and cutting SMAPE by up to <strong>11.6%</strong> across four cities.</li>
+              <li>Devised a two-stage <strong>augmentation pipeline</strong> using uniform perturbation and SMOTE to transform aggregated agricultural samples into temporally balanced training records for regression modeling.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Python</span><span>XGBoost</span><span>Optuna</span><span>Scikit-learn</span><span>SMOTE</span><span>ML Pipeline</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Software Engineer I (Full Stack Developer)</h3>
+                <p class="company">NCR Voyix</p>
+              </div>
+              <span class="timeline-date">Jan 2022 &ndash; Jul 2023</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Reduced NCR Counterpoint API latency by <strong>93%</strong> by engineering a <strong>Redis caching layer</strong> with multi-tenant namespace isolation, reducing redundant database reads for pay codes, tax codes, and gift card codes on every transaction.</li>
+              <li>Integrated <strong>Elasticsearch</strong> as a search read model, enabling sub-20ms full-text search with fuzzy matching and relevance ranking, improving the latency by <strong>10x</strong> over full-table-scans.</li>
+              <li>Optimized the customers endpoint using <strong>JPA pagination and DTO projections</strong> on lazy-loaded collections, preventing N+1 queries and reducing risk of connection pool exhaustion under heavy sync load.</li>
+              <li>Built the <strong>User Access Control and Role Management</strong> modules for the admin console using TanStack Query and Zustand, with transactional role assignment, zero-role user warnings, and domain-grouped permission picker.</li>
+              <li>Authored comprehensive <strong>JUnit and Mockito</strong> unit tests, establishing an <strong>80% code coverage</strong> guardrail for the deployment pipeline.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Spring Boot</span><span>Redis</span><span>Elasticsearch</span><span>React</span><span>JUnit</span><span>Mockito</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Software Engineer Intern</h3>
+                <p class="company">S&amp;P Global</p>
+              </div>
+              <span class="timeline-date">May 2021 &ndash; Jul 2021</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Architected <strong>15+ Cloud Custodian policies</strong> using YAML, CloudTrail, and SQS across 8 AWS services (EC2, S3, IAM, DynamoDB, ECS, ECR, Lambda, DMS) to automate compliance enforcement and reduce security drift by <strong>90%</strong>.</li>
+              <li>Implemented tagging, IAM, and ECR governance policies in <strong>Cloud Custodian</strong>, reducing NON-COMPLIANT resources by <strong>95%</strong> and improving cost attribution.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>AWS</span><span>Cloud Custodian</span><span>YAML</span><span>CloudTrail</span><span>SQS</span><span>IAM</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-light">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Technologies I work with daily</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category skill--lang">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
+            <div class="skill-title-group">
+              <span class="skill-label">Programming</span>
+              <span class="skill-count">5 languages</span>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Core Java (Java 17)</span>
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-category skill--web">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+            <div class="skill-title-group">
+              <span class="skill-label">Web Technologies & Frameworks</span>
+              <span class="skill-count">6 technologies</span>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Spring Boot</span>
+            <span class="tag">Spring Security</span>
+            <span class="tag">React</span>
+            <span class="tag">Redux</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+        </div>
+        <div class="skill-category skill--db">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <div class="skill-title-group">
+              <span class="skill-label">Databases</span>
+              <span class="skill-count">6 systems</span>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Oracle</span>
+            <span class="tag">Redis</span>
+            <span class="tag">Elasticsearch</span>
+          </div>
+        </div>
+        <div class="skill-category skill--cloud">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+            <div class="skill-title-group">
+              <span class="skill-label">Cloud & DevOps</span>
+              <span class="skill-count">6 tools</span>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">AWS</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Jenkins</span>
+            <span class="tag">CI/CD Pipelines</span>
+            <span class="tag">Prometheus</span>
+            <span class="tag">Grafana</span>
+          </div>
+        </div>
+        <div class="skill-category skill--testing">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fas fa-vial"></i></div>
+            <div class="skill-title-group">
+              <span class="skill-label">Testing & Build Tools</span>
+              <span class="skill-count">5 tools</span>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">JUnit 5</span>
+            <span class="tag">Mockito</span>
+            <span class="tag">Maven</span>
+            <span class="tag">Postman</span>
+            <span class="tag">OpenAPI 3.0 (Swagger)</span>
+          </div>
+        </div>
+        <div class="skill-category skill--tools">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fas fa-tools"></i></div>
+            <div class="skill-title-group">
+              <span class="skill-label">Developer Tools & Methodologies</span>
+              <span class="skill-count">5 tools</span>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Git</span>
+            <span class="tag">Jira</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Agile</span>
+            <span class="tag">Scrum</span>
+          </div>
+        </div>
+        <div class="skill-category skill--ai">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+            <div class="skill-title-group">
+              <span class="skill-label">AI / ML</span>
+              <span class="skill-count">5 technologies</span>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">XGBoost</span>
+            <span class="tag">Optuna</span>
+            <span class="tag">Time Series Forecasting</span>
+            <span class="tag">Data Augmentation &amp; Resampling</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section section-light">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">A selection of personal and academic work</p>
+      </div>
+
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all"><i class="fas fa-th"></i> All Projects</button>
+        <button class="filter-btn" data-filter="ai-ml"><i class="fas fa-brain"></i> AI / ML</button>
+        <button class="filter-btn" data-filter="systems"><i class="fas fa-server"></i> Systems</button>
+        <button class="filter-btn" data-filter="database"><i class="fas fa-database"></i> Database</button>
+        <button class="filter-btn" data-filter="web"><i class="fas fa-globe"></i> Web / Full Stack</button>
+      </div>
+
+      <!-- Project Grid -->
+      <div class="projects-grid">
+
+        <div class="project-card" data-category="web systems">
+          <div class="project-card-top">
+            <div class="project-card-icon"><i class="fas fa-folder-open"></i></div>
+            <a href="https://github.com/Shriyag-dev/ecommerce-microservices" target="_blank" class="project-github-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
+          </div>
+          <span class="project-cat project-cat--systems">Microservices</span>
+          <h3>E-Commerce Microservices Platform</h3>
+          <p>Production-grade e-commerce backend with <strong>6 Spring Boot microservices</strong> using Eureka service discovery, API Gateway routing, and Kafka-driven async order workflows with full event sourcing.</p>
+          <div class="project-tech-pills">
+            <span>Java 21</span><span>Spring Boot 3</span><span>Kafka</span><span>PostgreSQL</span><span>Docker</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ai-ml">
+          <div class="project-card-top">
+            <div class="project-card-icon"><i class="fas fa-folder-open"></i></div>
+            <a href="https://github.com/Shriyag-dev/PYCS_ML" target="_blank" class="project-github-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
+          </div>
+          <span class="project-cat project-cat--ai">AI / ML</span>
+          <h3>ML Crop Yield Forecasting</h3>
+          <p>Predicted alfalfa biomass yields using 7K+ weather records over 20 years. Achieved R&sup2; of <strong>0.907</strong> with Stacking/Voting ensemble architectures combining 5 Optuna-tuned regressors.</p>
+          <div class="project-tech-pills">
+            <span>Python</span><span>XGBoost</span><span>Optuna</span><span>scikit-learn</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ai-ml">
+          <div class="project-card-top">
+            <div class="project-card-icon"><i class="fas fa-folder-open"></i></div>
+            <a href="https://github.com/Shriyag-dev/cold-email-generator" target="_blank" class="project-github-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
+          </div>
+          <span class="project-cat project-cat--ai">AI / ML</span>
+          <h3>AI Cold Email Generator</h3>
+          <p>GenAI API that scrapes job listings, matches portfolio via semantic search using ChromaDB RAG, and writes personalized cold emails with Pydantic validation.</p>
+          <div class="project-tech-pills">
+            <span>FastAPI</span><span>LangChain</span><span>Groq Llama 3.1</span><span>ChromaDB</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ai-ml">
+          <div class="project-card-top">
+            <div class="project-card-icon"><i class="fas fa-folder-open"></i></div>
+            <a href="https://github.com/Shriyag-dev/CNN-Classifier-main" target="_blank" class="project-github-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
+          </div>
+          <span class="project-cat project-cat--ai">AI / ML</span>
+          <h3>CNN Classifier (CIFAR-10)</h3>
+          <p>PyTorch-based image classification pipeline with custom CNN, ResNet-20 benchmarking, computational cost analysis (MACs/FLOPs), and feature map visualization.</p>
+          <div class="project-tech-pills">
+            <span>PyTorch</span><span>TorchVision</span><span>OpenCV</span><span>THOP</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ai-ml">
+          <div class="project-card-top">
+            <div class="project-card-icon"><i class="fas fa-folder-open"></i></div>
+            <a href="https://github.com/Shriyag-dev/Pruning" target="_blank" class="project-github-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
+          </div>
+          <span class="project-cat project-cat--ai">AI / ML</span>
+          <h3>Neural Network Pruning</h3>
+          <p>Magnitude-based pruning of VGG13 on CIFAR-10 comparing unstructured vs filter pruning with OMP/IMP scheduling. Achieved <strong>80% sparsity</strong> with only 2.39% accuracy drop.</p>
+          <div class="project-tech-pills">
+            <span>PyTorch</span><span>VGG13</span><span>YAML</span><span>Matplotlib</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ai-ml">
+          <div class="project-card-top">
+            <div class="project-card-icon"><i class="fas fa-folder-open"></i></div>
+            <a href="https://github.com/Shriyag-dev/PrivacyPreservingDataAnalysis-main" target="_blank" class="project-github-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
+          </div>
+          <span class="project-cat project-cat--ai">AI / ML</span>
+          <h3>Privacy-Preserving Optimizers</h3>
+          <p>Privatized AdaGrad &amp; RMSProp with differential privacy (&epsilon;=3.0, &delta;=1e-5) for CIFAR-10 using grouped gradient clipping, weight standardization, and per-layer noise injection.</p>
+          <div class="project-tech-pills">
+            <span>PyTorch</span><span>Opacus</span><span>Differential Privacy</span><span>Pandas</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="systems">
+          <div class="project-card-top">
+            <div class="project-card-icon"><i class="fas fa-folder-open"></i></div>
+            <a href="https://github.com/Shriyag-dev/Consistent_Hashing-main" target="_blank" class="project-github-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
+          </div>
+          <span class="project-cat project-cat--systems">Systems</span>
+          <h3>Consistent Hashing Service</h3>
+          <p>Distributed key-value naming system using consistent hashing with socket-based inter-server communication and ring topology. Supports lookup, insert, delete with automatic key redistribution.</p>
+          <div class="project-tech-pills">
+            <span>Java</span><span>Sockets</span><span>Multithreading</span><span>Distributed Systems</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="systems">
+          <div class="project-card-top">
+            <div class="project-card-icon"><i class="fas fa-folder-open"></i></div>
+            <a href="https://github.com/Shriyag-dev/FTP_Client_Server" target="_blank" class="project-github-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
+          </div>
+          <span class="project-cat project-cat--systems">Systems</span>
+          <h3>FTP Client &amp; Server</h3>
+          <p>Simplified FTP implementation with multi-client support via threading. Implements 8 FTP commands (get, put, delete, ls, cd, mkdir, pwd, quit) over TCP sockets.</p>
+          <div class="project-tech-pills">
+            <span>Java</span><span>TCP Sockets</span><span>Multithreading</span><span>Client-Server</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="database">
+          <div class="project-card-top">
+            <div class="project-card-icon"><i class="fas fa-folder-open"></i></div>
+            <a href="https://github.com/Shriyag-dev/Database-Management-project-3-main" target="_blank" class="project-github-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
+          </div>
+          <span class="project-cat project-cat--db">Database</span>
+          <h3>Relational DB Engine</h3>
+          <p>Custom relational database engine in Java with 5 configurable indexing strategies (TreeMap, HashMap, LinHashMap, B+Tree). Benchmarks SELECT and JOIN across 10K&ndash;100K tuples.</p>
+          <div class="project-tech-pills">
+            <span>Java</span><span>B+ Tree</span><span>Linear Hashing</span><span>Benchmarking</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="database web">
+          <div class="project-card-top">
+            <div class="project-card-icon"><i class="fas fa-folder-open"></i></div>
+            <a href="https://github.com/Shriyag-dev/DatabaseManagement-project-4-main" target="_blank" class="project-github-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
+          </div>
+          <span class="project-cat project-cat--db">Database / Web</span>
+          <h3>Cafe Management System</h3>
+          <p>Full-stack database application with Django &amp; PostgreSQL. Features UML design, BCNF/3NF schema normalization, secure authentication with SQL injection prevention.</p>
+          <div class="project-tech-pills">
+            <span>Django</span><span>PostgreSQL</span><span>Python</span><span>HTML/CSS/JS</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-card-top">
+            <div class="project-card-icon"><i class="fas fa-folder-open"></i></div>
+            <a href="https://github.com/Shriyag-dev/Transformative_Student_Engagement_Monitoring_System" target="_blank" class="project-github-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
+          </div>
+          <span class="project-cat project-cat--web">Web / Design</span>
+          <h3>Student Engagement Monitor</h3>
+          <p>Comprehensive student engagement monitoring system with iterative UI/UX prototyping across multiple milestones. Designed with Figma including full design specifications.</p>
+          <div class="project-tech-pills">
+            <span>Figma</span><span>UI/UX Design</span><span>Prototyping</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section section-light">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="section-number">05</span>
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Academic foundation in Computer Science</p>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Master of Science, Computer Science</h3>
+          <p class="edu-school">University of Georgia, School of Computing</p>
+          <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Athens, Georgia</p>
+          <div class="edu-meta">
+            <span class="edu-date"><i class="fas fa-calendar"></i> Graduated May 2025</span>
+            <span class="edu-gpa">GPA: 3.85 / 4.0</span>
+          </div>
+          <div class="edu-coursework">
+            <p class="edu-coursework-label">Relevant Coursework</p>
+            <div class="skill-tags">
+              <span class="tag">Data Science</span>
+              <span class="tag">Algorithms</span>
+              <span class="tag">Database Management</span>
+              <span class="tag">Distributed Computing Systems</span>
+            </div>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Bachelor of Technology, Computer Science</h3>
+          <p class="edu-school">G Narayanamma Institute of Technology and Science (GNITS)</p>
+          <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Hyderabad, India</p>
+          <div class="edu-meta">
+            <span class="edu-date"><i class="fas fa-calendar"></i> Aug 2018 &ndash; Jul 2022</span>
+          </div>
+          <div class="edu-coursework">
+            <p class="edu-coursework-label">Relevant Coursework</p>
+            <div class="skill-tags">
+              <span class="tag">Operating Systems</span>
+              <span class="tag">Computer Networks</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Human Computer Interaction</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section section-light">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="section-number">06</span>
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">Industry-recognized cloud and development credentials</p>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card">
+          <div class="cert-icon aws"><i class="fab fa-aws"></i></div>
+          <div class="cert-info">
+            <h4>AWS Cloud Practitioner</h4>
+            <p>Amazon Web Services</p>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon azure"><i class="fab fa-microsoft"></i></div>
+          <div class="cert-info">
+            <h4>Microsoft Certified: Azure Fundamentals</h4>
+            <p>Microsoft</p>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon ibm"><i class="fas fa-laptop-code"></i></div>
+          <div class="cert-info">
+            <h4>Full Stack Software Developer</h4>
+            <p>IBM &mdash; Coursera Professional Certificate</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-light">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="section-number">07</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's build something great together</p>
+      </div>
+      <div class="contact-content">
+        <p class="contact-text">I'm currently open to new opportunities and would love to hear from you. Whether you have a question or just want to say hi, feel free to reach out.</p>
+        <a href="mailto:shriyag2536@gmail.com" class="contact-email">shriyag2536@gmail.com</a>
+        <div class="contact-links">
+          <a href="mailto:shriyag2536@gmail.com" class="btn-primary"><i class="fas fa-paper-plane"></i> Say Hello</a>
+        </div>
+        <div class="contact-details">
+          <div class="contact-detail">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Atlanta, GA (Open to Relocate)</span>
+          </div>
+          <div class="contact-detail">
+            <i class="fas fa-phone"></i>
+            <a href="tel:4709839189">+1 (470) 983-9189</a>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/Shriyag-dev" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/shriya-dev/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:shriyag2536@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-line"></div>
+      <p>Designed &amp; Built by Shriya Garlapati</p>
+      <p class="footer-sub">&copy; 2026 &mdash; All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
